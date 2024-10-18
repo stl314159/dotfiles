@@ -88,6 +88,7 @@
       "wget"
       "xz"
       "yq"
+      "yt-dlp"
     ];
 
     casks = [
