@@ -6,7 +6,7 @@
   environment.systemPackages =
     [
       pkgs.home-manager
-      #pkgs.oh-my-zsh
+      pkgs.oh-my-zsh
     ];
 
   # Use a custom configuration.nix location.
@@ -24,12 +24,12 @@
 
   # Create /etc/zshrc that loads the nix-darwin environment.
   programs.zsh.enable = true;
-  programs.zsh.oh-my-zsh = {
-    enable = true;
-    plugins = [ "git" "python" "man" ];
-    theme = "agnoster";
-    customPkgs = [ pkgs.nix-zsh-completions ];
-  };
+  #programs.zsh.oh-my-zsh = {
+  #  enable = true;
+  #  plugins = [ "git" "python" "man" ];
+  #  theme = "agnoster";
+  #  customPkgs = [ pkgs.nix-zsh-completions ];
+  #};
 
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
