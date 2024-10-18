@@ -81,15 +81,36 @@
 
     casks = [
       "1password"
+      "alt-tab"
+      "balenaetcher"
+      "discord"
+      "docker"
+      "firefox"
+      "ghidra"
+      "github"
+      "keka"
+      "miniconda"
+      "moonlight"
+      "neo4j"
       "obsidian"
+      "ollama"
+      "openscad"
+      "postman"
+      "pgadmin4"
+      "signal"
+      "slack"
+      "raspberry-pi-imager"
       "raycast"
+      "temurin"
+      "visual-studio-code"
+      "vlc"
+      "warp"
+      "wave"
+      "wireshark"
     ];
 
     masApps = {
-      #"Drafts" = 1435957248;
-      #"Reeder" = 1529448980;
-      #"Things" = 904280696;
-      #"Timery" = 1425368544;
+      "Tailscale" = 1475387142;
     };
   };
 
@@ -100,7 +121,7 @@
     defaults = {
       dock = {
         autohide = true;
-        orientation = "left";
+        orientation = "bottom";
         show-process-indicators = false;
         show-recents = false;
         static-only = true;
