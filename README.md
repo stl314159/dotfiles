@@ -3,15 +3,11 @@
 This is to describe the barebones development system I use. Supports NixOS on WSL, Intel and Silicon Macs.
 
 Featuring:
-- Wezterm
 - Tmux
-- Fish
 - Neovim
 - OSX
   - darwin-nix
-  - Hammerspoon
   - homebrew mas
-  - yabai
 
 ## Install Nix
 
@@ -25,21 +21,21 @@ On WSL2: [WSL2 Nix](https://github.com/nix-community/NixOS-WSL?tab=readme-ov-fil
 
 ### NixOS (currently just WSL)
 
-`sudo nixos-install --flake github:evantravers/dotfiles#nixos`
+`sudo nixos-install --flake github:stl314159/dotfiles#nixos`
 
 ### Darwin/Linux
 
-`nix run nix-darwin -- switch --flake github:evantravers/dotfiles`
+`nix run nix-darwin -- switch --flake github:stl314159/dotfiles`
 
 ## Update
 
 ### NixOS
 
-`sudo nixos-rebuild switch --flake ~/src/github.com/evantravers/dotfiles`
+`sudo nixos-rebuild switch --flake ~/src/github.com/stl314159/dotfiles`
 
 ### Darwin
 
-`darwin-rebuild switch --flake ~/src/github.com/evantravers/dotfiles`
+`darwin-rebuild switch --flake ~/src/github.com/stl314159/dotfiles`
 
 ## Home Manager
 

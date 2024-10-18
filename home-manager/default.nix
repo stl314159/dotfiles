@@ -2,10 +2,10 @@
 
 {
   imports = [
-    #./git.nix
-    #./nvim
-    #./starship.nix
-    #./tmux.nix
+    ./git.nix
+    ./nvim
+    ./starship.nix
+    ./tmux.nix
   ];
 
   home = {
@@ -18,7 +18,7 @@
       #pkgs.devenv
       #pkgs.markdown-oxide
       #pkgs.nixd
-      #pkgs.ripgrep
+      pkgs.ripgrep
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
