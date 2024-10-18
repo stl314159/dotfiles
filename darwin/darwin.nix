@@ -22,10 +22,11 @@
   };
 
   # Create /etc/zshrc that loads the nix-darwin environment.
-  programs = {
-    #gnupg.agent.enable = true;
-    zsh.enable = true;  # default shell on catalina
-  };
+  #programs = {
+  #  #gnupg.agent.enable = true;
+  #  zsh.enable = true;  # default shell on catalina
+  #};
+  programs.zsh.enable = true;
 
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
@@ -55,6 +56,9 @@
       #"Timery" = 1425368544;
     };
   };
+
+  # Add ability to used TouchID for sudo authentication
+  security.pam.enableSudoTouchIdAuth = true;
 
   system = {
     defaults = {
