@@ -24,7 +24,7 @@
 
   # Create /etc/zshrc that loads the nix-darwin environment.
   programs.zsh.enable = true;
-  programs.zsh.ohMyZsh = {
+  programs.zsh.oh-my-zsh = {
     enable = true;
     plugins = [ "git" "python" "man" ];
     theme = "agnoster";
