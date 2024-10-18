@@ -144,6 +144,7 @@
       "Microsoft Word" = 462054704;
       "Microsoft Excel" = 462058435;
       "Microsoft PowerPoint" = 462062816;
+      "Jump Desktop" = 524141863;
     };
   };
 
