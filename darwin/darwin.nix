@@ -56,7 +56,6 @@
     # `brew install`
     # TODO Feel free to add your favorite apps here.
     brews = [
-      "1password-cli"
       "awscli"
       "bat"
       "binwalk"
@@ -81,6 +80,7 @@
 
     casks = [
       "1password"
+      "1password-cli"
       "alt-tab"
       "balenaetcher"
       "discord"
