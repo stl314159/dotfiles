@@ -175,7 +175,7 @@
     };
     "com.apple.symbolichotkeys" = {
       AppleSymbolicHotKeys = {
-        64 = {
+        "64" = {
           enabled = 0;
           value = {
             parameters = [ 49 1048576 131072 ]; # Disable Cmd+Space
