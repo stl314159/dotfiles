@@ -139,22 +139,50 @@
         show-process-indicators = false;
         show-recents = false;
         static-only = true;
+        mru-spaces = false;
       };
       finder = {
         AppleShowAllExtensions = true;
         FXDefaultSearchScope = "SCcf";
+        FXPreferredViewStyle = "clmv";
         FXEnableExtensionChangeWarning = false;
         ShowPathbar = true;
+        ShowStatusBar = true;
       };
       NSGlobalDomain = {
         AppleKeyboardUIMode = 3;
-        "com.apple.keyboard.fnState" = true;
+        "com.apple.keyboard.fnState" = false;
         NSAutomaticWindowAnimationsEnabled = false;
+        AppleInterfaceStyle = "Dark";
+        NSAutomaticCapitalizationEnabled = false;
+        NSAutomaticDashSubstitutionEnabled = false;
+        NSAutomaticPeriodSubstitutionEnabled = false;
+        NSAutomaticQuoteSubstitutionEnabled = false;
+        NSAutomaticSpellingCorrectionEnabled = false;
+        NSDocumentSaveNewDocumentsToCloud = false;
+      };
+      WindowManager = {
+        EnableStandardClickToShowDesktop = false;
+        StandardHideDesktopIcons = true;
+      };
+      alf = {
+        globalstate = 3;
       };
     };
     keyboard = {
       enableKeyMapping = true;
       remapCapsLockToControl = true;
+    };
+    "com.apple.symbolichotkeys" = {
+      AppleSymbolicHotKeys = {
+        64 = {
+          enabled = 0;
+          value = {
+            parameters = [ 49 1048576 131072 ]; # Disable Cmd+Space
+            type = "standard";
+          };
+        };
+      };
     };
   };
 }
