@@ -83,6 +83,7 @@
       "1password-cli"
       "alt-tab"
       "balenaetcher"
+      "cursor"
       "discord"
       "docker"
       "firefox"
