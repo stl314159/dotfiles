@@ -23,7 +23,7 @@
 
   # Create /etc/zshrc that loads the nix-darwin environment.
   programs = {
-    gnupg.agent.enable = true;
+    #gnupg.agent.enable = true;
     zsh.enable = true;  # default shell on catalina
   };
 
@@ -32,32 +32,11 @@
   system.stateVersion = 4;
 
   fonts.packages = [
-    pkgs.atkinson-hyperlegible
-    pkgs.jetbrains-mono
+    #pkgs.atkinson-hyperlegible
+    #pkgs.jetbrains-mono
   ];
 
   services = {
-    yabai = {
-      enable = true;
-      config = {
-        layout = "bsp";
-        mouse_modifier = "ctrl";
-        mouse_drop_action = "stack";
-        window_shadow = "float";
-        window_gap = "20";
-      };
-      extraConfig = ''
-        yabai -m signal --add event=display_added action="yabai -m rule --remove label=calendar && yabai -m rule --add app='Fantastical' label='calendar' display=east" active=yes
-        yabai -m signal --add event=display_removed action="yabai -m rule --remove label=calendar && yabai -m rule --add app='Fantastical' label='calendar' native-fullscreen=on" active=yes
-        yabai -m rule --add app='OBS' display=east
-        yabai -m rule --add app='Spotify' display=east
-
-        yabai -m rule --add app='Cardhop' manage=off
-        yabai -m rule --add app='Pop' manage=off
-        yabai -m rule --add app='System Settings' manage=off
-        yabai -m rule --add app='Timery' manage=off
-      '';
-    };
   };
 
   homebrew = {
@@ -65,24 +44,15 @@
 
     casks = [
       "1password"
-      "bartender"
-      "brave-browser"
-      "fantastical"
-      "firefox"
-      "hammerspoon"
-      "karabiner-elements"
-      "keycastr"
       "obsidian"
       "raycast"
-      "soundsource"
-      "wezterm"
     ];
 
     masApps = {
-      "Drafts" = 1435957248;
-      "Reeder" = 1529448980;
-      "Things" = 904280696;
-      "Timery" = 1425368544;
+      #"Drafts" = 1435957248;
+      #"Reeder" = 1529448980;
+      #"Things" = 904280696;
+      #"Timery" = 1425368544;
     };
   };
 

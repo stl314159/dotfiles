@@ -1,5 +1,5 @@
 {
-  description = "Evan's Nix System Configuration";
+  description = "Scott's Nix System Configuration";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     home-manager = {
@@ -53,12 +53,13 @@
       };
     };
     darwinConfigurations = {
-      "G2157QVFX1" = darwinSystem {
-        user = "etravers";
+      "mbp" = darwinSystem {
+        user = "scott";
+        arch = "aarch64-darwin";
       };
-      "Evans-MacBook-Pro" = darwinSystem {
-        user = "evan";
-        arch = "x86_64-darwin";
+      "mba" = darwinSystem {
+        user = "scott";
+        arch = "aarch64-darwin";
       };
     };
   };

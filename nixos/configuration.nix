@@ -18,9 +18,9 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  programs.fish.enable = true;
+  programs.zsh.enable = true;
 
-  users.defaultUserShell = pkgs.fish;
+  users.defaultUserShell = pkgs.zsh;
 
-  time.timeZone = "America/Chicago";
+  time.timeZone = "America/New York";
 }
