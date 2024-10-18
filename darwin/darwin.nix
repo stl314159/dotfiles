@@ -51,6 +51,7 @@
 
     taps = [
       "homebrew/services"
+      "siderolabs/tap"
     ];
 
     # `brew install`
@@ -63,14 +64,17 @@
       "cocoapods"
       "eza"
       "ffmpeg"
+      "fluxcd/tap/flux"
       "fzf"
       "gh"
       "jq"
       "k9s"
       "kubectx"
       "nmap"
+      "omnictl"
       "sshs"
       "starship"
+      "talosctl"
       "tldr"
       "tmux"
       "wget"
