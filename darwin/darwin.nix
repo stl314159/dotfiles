@@ -27,6 +27,7 @@
   #  zsh.enable = true;  # default shell on catalina
   #};
   programs.zsh.enable = true;
+  programs.zsh.oh-my-zsh.enable = true;
 
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
@@ -58,6 +59,7 @@
     # `brew install`
     # TODO Feel free to add your favorite apps here.
     brews = [
+      "age"
       "awscli"
       "bat"
       "binwalk"
@@ -73,8 +75,10 @@
       "kubectx"
       "nmap"
       "omnictl"
+      "sops"
       "sshs"
       "starship"
+      "talhelper"
       "talosctl"
       "tldr"
       "tmux"

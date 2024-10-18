@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./zshrc.nix
     ./git.nix
     ./nvim
     ./starship.nix
