@@ -43,6 +43,42 @@
   homebrew = {
     enable = true;
 
+    onActivation = {
+      autoUpdate = true;
+      # 'zap': uninstalls all formulae(and related files) not listed here.
+      cleanup = "zap";
+    };
+
+    taps = [
+      "homebrew/services"
+    ];
+
+    # `brew install`
+    # TODO Feel free to add your favorite apps here.
+    brews = [
+      "1password-cli"
+      "awscli"
+      "bat"
+      "binwalk"
+      "cmake"
+      "cocoapods"
+      "eza"
+      "ffmpeg"
+      "fzf"
+      "gh"
+      "jq"
+      "derailed/k9s/k9s"
+      "kubectx"
+      "nmap"
+      "sshs"
+      "starship"
+      "tldr"
+      "tmux"
+      "wget"
+      "xz"
+      "yq"
+    ];
+
     casks = [
       "1password"
       "obsidian"
