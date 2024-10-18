@@ -171,6 +171,7 @@
       };
       NSGlobalDomain = {
         AppleKeyboardUIMode = 3;
+        "com.apple.swipescrolldirection" = false;
         "com.apple.keyboard.fnState" = false;
         NSAutomaticWindowAnimationsEnabled = false;
         AppleInterfaceStyle = "Dark";
