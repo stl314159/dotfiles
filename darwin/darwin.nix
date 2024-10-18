@@ -22,6 +22,22 @@
     };
   };
 
+  # Use an activation script to apply the defaults command
+  system.activationScripts.symbolicHotkeys = {
+    text = ''
+      # Disable Cmd + Space for Spotlight
+      defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 '{
+        enabled = 0;
+        value = {
+          parameters = (49, 1048576, 131072);
+        type = "standard";
+      };
+    }'
+    # Restart Dock to apply the changes
+    killall Dock || true
+    '';
+  };
+
   # Create /etc/zshrc that loads the nix-darwin environment.
   programs.zsh.enable = true;
   #programs.zsh.oh-my-zsh = {
@@ -172,17 +188,6 @@
     keyboard = {
       enableKeyMapping = true;
       remapCapsLockToControl = true;
-    };
-    "com.apple.symbolichotkeys" = {
-      AppleSymbolicHotKeys = {
-        "64" = {
-          enabled = 0;
-          value = {
-            parameters = [ 49 1048576 131072 ]; # Disable Cmd+Space
-            type = "standard";
-          };
-        };
-      };
     };
   };
 }
