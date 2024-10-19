@@ -4,7 +4,6 @@
   imports = [
     ./zsh.nix
     ./git.nix
-    ./nvim
     ./starship.nix
     ./tmux.nix
   ];
