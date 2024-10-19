@@ -1,66 +1,66 @@
 {
-  description = "Scott's Nix System Configuration";
+  description = "NixOS config";
+
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    darwin = {
-      url = "github:LnL7/nix-darwin";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    nixos-wsl = {
-      url = "github:nix-community/NixOS-WSL";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    flake-utils.url = "github:numtide/flake-utils";
+
+    nix-darwin.url = "github:LnL7/nix-darwin";
+    nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
+
+    home-manager.url = "github:nix-community/home-manager/master";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
-  outputs = { nixpkgs, darwin, home-manager, nixos-wsl, ... } @ inputs: let
-    darwinSystem = {user, arch ? "aarch64-darwin"}:
-      darwin.lib.darwinSystem {
-        system = arch;
-        modules = [
-          ./darwin/darwin.nix
-          home-manager.darwinModules.home-manager
-          {
-            _module.args = { inherit inputs; };
-            home-manager = {
-              users.${user} = import ./home-manager;
-            };
-            users.users.${user}.home = "/Users/${user}";
-            nix.settings.trusted-users = [ user ];
-          }
-        ];
+
+  outputs = inputs@{ nix-darwin, self, ... }: {
+    # $ darwin-rebuild build --flake .#mbp
+    darwinConfigurations."mbp" = nix-darwin.lib.darwinSystem {
+      # Need this to pass inputs to modules/darwin
+      specialArgs = {
+        inherit inputs;
+        user = {
+          name = "scott";
+          home = "/Users/scott";
+        };
+        arch = "aarch64-darwin";
       };
-  in
-  {
-    nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = [
-          nixos-wsl.nixosModules.wsl
-          ./nixos/configuration.nix
-          ./.config/wsl
-          home-manager.nixosModules.home-manager
-          {
-            home-manager = {
-              users.nixos = import ./home-manager;
-            };
-            nix.settings.trusted-users = [ "nixos" ];
-          }
-        ];
-      };
+
+      modules = [
+        ./modules/darwin
+
+        inputs.home-manager.darwinModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.scott.imports = [ ./modules/home-manager ];
+          home-manager.backupFileExtension = "backup";
+        }
+      ];
     };
-    darwinConfigurations = {
-      "mbp" = darwinSystem {
-        user = "scott";
+
+    # $ darwin-rebuild build --flake .#mba
+    darwinConfigurations."mba" = nix-darwin.lib.darwinSystem {
+      # Need this to pass inputs to modules/darwin
+      specialArgs = {
+        inherit inputs;
+        user = {
+          name = "scott";
+          home = "/Users/scott";
+        };
         arch = "aarch64-darwin";
       };
-      "mba" = darwinSystem {
-        user = "scott";
-        arch = "aarch64-darwin";
-      };
+
+      modules = [
+        # TODO: Reorganise modules
+        ./modules/darwin
+
+        inputs.home-manager.darwinModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.scott.imports = [ ./modules/home-manager ];
+          home-manager.backupFileExtension = "backup";
+        }
+      ];
     };
   };
 }

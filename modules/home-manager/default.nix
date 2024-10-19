@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./zshrc.nix
+    ./zsh.nix
     ./git.nix
     ./nvim
     ./starship.nix
@@ -12,14 +12,16 @@
   home = {
     stateVersion = "24.05"; # Please read the comment before changing.
 
+    sessionPath = [
+      "$HOME/bin"
+      "$HOME/scripts"
+      "/opt/homebrew/bin"
+    ];
+
     # The home.packages option allows you to install Nix packages into your
     # environment.
-    packages = [
-      #pkgs.amber
-      #pkgs.devenv
-      #pkgs.markdown-oxide
-      #pkgs.nixd
-      pkgs.ripgrep
+    packages = with pkgs; [
+      ripgrep
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -39,7 +41,7 @@
   programs = {
     direnv = {
       enable = true;
-
+      enableZshIntegration = true;
       nix-direnv.enable = true;
     };
   };
