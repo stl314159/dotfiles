@@ -56,7 +56,7 @@
       '';
 
       shellAliases = {
-        sops = "/opt/homebrew/bin/op run -- /opt/homebrew/bin/sops"
+        sops = "/opt/homebrew/bin/op run -- /opt/homebrew/bin/sops";
 
         switch = "darwin-rebuild switch --flake ~/src/github.com/stl314159/dotfiles";
       };
