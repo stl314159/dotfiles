@@ -17,7 +17,7 @@
 
   # Set up keyboard
   system.defaults.NSGlobalDomain.AppleKeyboardUIMode = 3;
-  system.defaults.NSGlobalDomain."com.apple.swipescrolldirection" = true;
+  system.defaults.NSGlobalDomain."com.apple.swipescrolldirection" = false;
   system.defaults.NSGlobalDomain."com.apple.keyboard.fnState" = false;
   system.defaults.NSGlobalDomain.NSAutomaticWindowAnimationsEnabled = false;
   system.defaults.NSGlobalDomain.AppleInterfaceStyle = "Dark";
