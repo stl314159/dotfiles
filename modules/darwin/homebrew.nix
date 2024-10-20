@@ -66,6 +66,7 @@
       "neo4j"
       "obsidian"
       "ollama"
+      "openlens"
       "openscad"
       "postman"
       "pgadmin4"

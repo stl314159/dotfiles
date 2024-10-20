@@ -1,4 +1,7 @@
 { ... }: {
+  # Firewall settings
+  system.defaults.alf.globalstate = 3;
+
   # Dock settings
   system.defaults.dock.autohide = true;
   system.defaults.dock.show-recents = false;
@@ -31,6 +34,10 @@
   # Window manager settings
   system.defaults.WindowManager.EnableStandardClickToShowDesktop = false;
   system.defaults.WindowManager.StandardHideDesktopIcons = true;
+
+  # Custom settings
+  system.defaults.CustomUserPreferences."com.apple.desktopservices".DSDontWriteNetworkStores = true;
+  system.defaults.CustomUserPreferences."com.apple.desktopservices".DSDontWriteUSBStores = true;
 
   # Enable sudo authentication with Touch ID
   security.pam.enableSudoTouchIdAuth = true;
