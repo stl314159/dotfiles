@@ -3,9 +3,9 @@
 {
   imports = [
     ./zsh.nix
-    ./git.nix
-    ./starship.nix
-    ./tmux.nix
+    # ./git.nix
+    # ./starship.nix
+    # ./tmux.nix
   ];
 
   home = {
