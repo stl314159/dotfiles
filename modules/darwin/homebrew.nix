@@ -60,6 +60,7 @@
       "firefox"
       "ghidra"
       "github"
+      "google-chrome"
       "keka"
       "miniconda"
       "moonlight"
