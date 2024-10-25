@@ -14,10 +14,10 @@
       "homebrew/services"
       "siderolabs/tap"
       "fluxcd/tap"
+      "nikitabobko/tap"
     ];
 
     # `brew install`
-    # TODO Feel free to add your favorite apps here.
     brews = [
       "age"
       "awscli"
@@ -52,8 +52,10 @@
     casks = [
       "1password"
       "1password-cli"
+      "aerospace"
       "alt-tab"
       "balenaetcher"
+      "bambu-studio"
       "cursor"
       "discord"
       "docker"
@@ -64,6 +66,7 @@
       "keka"
       "miniconda"
       "moonlight"
+      "msty"
       "neo4j"
       "obsidian"
       "ollama"
@@ -71,6 +74,7 @@
       "openscad"
       "postman"
       "pgadmin4"
+      "shottr"
       "signal"
       "slack"
       "raspberry-pi-imager"

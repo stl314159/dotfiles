@@ -9,6 +9,8 @@
   system.defaults.dock.show-process-indicators = false;
   system.defaults.dock.static-only = true;
   system.defaults.dock.mru-spaces = false;
+  system.defaults.dock.autohide-time-modifier = 0.2;
+  system.defaults.dock.persistent-others = [ "~/Documents" "~/Downloads" "~/Desktop"];
   
   # Finder settings
   system.defaults.finder.AppleShowAllExtensions = true;
