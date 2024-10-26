@@ -63,6 +63,7 @@
       "ghidra"
       "github"
       "google-chrome"
+      "inkscape"
       "keka"
       "miniconda"
       "moonlight"
