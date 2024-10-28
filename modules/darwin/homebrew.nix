@@ -6,6 +6,7 @@
       autoUpdate = true;
       # 'zap': uninstalls all formulae(and related files) not listed here.
       cleanup = "zap";
+      upgrade = true;
     };
 
     global.brewfile = true;
@@ -54,6 +55,7 @@
       "1password-cli"
       "aerospace"
       "alt-tab"
+      "autodesk-fusion"
       "balenaetcher"
       "bambu-studio"
       "cursor"
