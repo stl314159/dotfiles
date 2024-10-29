@@ -80,6 +80,7 @@
       "shottr"
       "signal"
       "slack"
+      "steam"
       "raspberry-pi-imager"
       "raycast"
       "temurin"
