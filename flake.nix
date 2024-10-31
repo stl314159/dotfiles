@@ -64,7 +64,7 @@
     };
 
     # $ darwin-rebuild build --flake .#mini
-    darwinConfigurations."mba" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."mini" = nix-darwin.lib.darwinSystem {
       # Need this to pass inputs to modules/darwin
       specialArgs = {
         inherit inputs;
