@@ -62,5 +62,31 @@
         }
       ];
     };
+
+    # $ darwin-rebuild build --flake .#mini
+    darwinConfigurations."mba" = nix-darwin.lib.darwinSystem {
+      # Need this to pass inputs to modules/darwin
+      specialArgs = {
+        inherit inputs;
+        user = {
+          name = "scott";
+          home = "/Users/scott";
+        };
+        arch = "aarch64-darwin";
+      };
+
+      modules = [
+        # TODO: Reorganise modules
+        ./modules/darwin
+
+        inputs.home-manager.darwinModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.scott.imports = [ ./modules/home-manager ];
+          home-manager.backupFileExtension = "backup";
+        }
+      ];
+    };
   };
 }
