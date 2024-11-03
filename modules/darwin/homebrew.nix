@@ -97,6 +97,7 @@
       "Microsoft Excel" = 462058435;
       "Microsoft PowerPoint" = 462062816;
       "Jump Desktop" = 524141863;
+      "Xcode" = 497799835;
     };
   };
 }
