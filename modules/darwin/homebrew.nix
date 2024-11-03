@@ -89,6 +89,7 @@
       "warp"
       "wave"
       "wireshark"
+      "zoom"
     ];
 
     masApps = {
