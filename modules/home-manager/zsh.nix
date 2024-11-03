@@ -58,7 +58,7 @@
       shellAliases = {
         sops = "/opt/homebrew/bin/op run -- /opt/homebrew/bin/sops";
 
-        alias switch = "darwin-rebuild switch --flake ~/src/github.com/stl314159/dotfiles";
+        switch = "prev_dir=\$(pwd); cd ~/src/github.com/stl314159/dotfiles && git pull && cd \$prev_dir && darwin-rebuild switch --flake ~/src/github.com/stl314159/dotfiles";
       };
     };
 
