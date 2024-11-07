@@ -24,6 +24,7 @@
       "awscli"
       "bat"
       "binwalk"
+      "blackhole-2ch"
       "cmake"
       "cocoapods"
       "eza"
