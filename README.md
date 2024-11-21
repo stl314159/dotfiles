@@ -12,6 +12,7 @@ Featuring:
 ## Install Nix
 
 On OSX: [Determinate Systems Installer](https://github.com/DeterminateSystems/nix-installer).
+`curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install macos`
 On WSL2: [WSL2 Nix](https://github.com/nix-community/NixOS-WSL?tab=readme-ov-file)
 
 ## Bootstrap
