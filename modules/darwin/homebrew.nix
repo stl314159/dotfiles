@@ -100,6 +100,7 @@
       "Microsoft PowerPoint" = 462062816;
       "Jump Desktop" = 524141863;
       "Xcode" = 497799835;
+      "WireGuard" = 1451685025;
     };
   };
 }
