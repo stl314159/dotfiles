@@ -76,6 +76,7 @@
       "ollama"
       "openlens"
       "openscad"
+      "orcaslicer"
       "postman"
       "pgadmin4"
       "shottr"
