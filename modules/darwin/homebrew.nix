@@ -59,6 +59,7 @@
       "balenaetcher"
       "bambu-studio"
       "blackhole-2ch"
+      "chatgpt"
       "cursor"
       "discord"
       "docker"
