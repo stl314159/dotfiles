@@ -67,6 +67,7 @@
       "ghidra"
       "github"
       "google-chrome"
+      "imhex"
       "inkscape"
       "keka"
       "miniconda"
