@@ -73,6 +73,7 @@
       "keka"
       "miniconda"
       "moonlight"
+      "msty"
       "neo4j"
       "obsidian"
       "ollama"
