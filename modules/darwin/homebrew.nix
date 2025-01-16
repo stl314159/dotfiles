@@ -22,6 +22,7 @@
     brews = [
       "age"
       "awscli"
+      "azure-cli"
       "bat"
       "binwalk"
       "cmake"
@@ -56,6 +57,7 @@
       "1password"
       "1password-cli"
       "aerospace"
+      "android-platform-tools"
       "alt-tab"
       "autodesk-fusion"
       "balenaetcher"
