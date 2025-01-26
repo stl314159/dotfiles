@@ -85,6 +85,7 @@
       "openlens"
       "openscad"
       "orbstack"
+      "orcaslicer"
       "postman"
       "pgadmin4"
       "shottr"
