@@ -46,6 +46,7 @@
       "terraform"
       "tldr"
       "tmux"
+      "tree"
       "uv"
       "virtualenvwrapper"
       "wget"
