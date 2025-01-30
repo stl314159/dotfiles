@@ -86,6 +86,7 @@
       "ollama"
       "openlens"
       "openscad"
+      "openvpn-connect"
       "orbstack"
       "orcaslicer"
       "postman"
