@@ -33,6 +33,7 @@
       "fzf"
       "gh"
       "git-lfs"
+      "gpg"
       "jq"
       "k9s"
       "kubectx"
