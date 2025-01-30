@@ -32,6 +32,7 @@
       "flux"
       "fzf"
       "gh"
+      "git-lfs"
       "jq"
       "k9s"
       "kubectx"
