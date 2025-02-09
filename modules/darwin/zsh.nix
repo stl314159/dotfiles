@@ -27,6 +27,8 @@
       export WORKON_HOME=$HOME/.virtualenvs
       export VIRTUALENVWRAPPER_PYTHON=$(which python3)
       source $(which virtualenvwrapper.sh)
+      # Aider Path Setup
+      export PATH="$HOME/.local/bin:$PATH"
     '';
   };
 }

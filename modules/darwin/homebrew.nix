@@ -27,6 +27,7 @@
       "binwalk"
       "cmake"
       "cocoapods"
+      "coreutils"
       "eza"
       "ffmpeg"
       "flux"
