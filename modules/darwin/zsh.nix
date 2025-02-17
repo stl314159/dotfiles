@@ -29,6 +29,8 @@
       source $(which virtualenvwrapper.sh)
       # Aider Path Setup
       export PATH="$HOME/.local/bin:$PATH"
+      # Mise Setup
+      eval "$(mise activate zsh)"
     '';
   };
 }
