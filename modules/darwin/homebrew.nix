@@ -104,6 +104,7 @@
       "raycast"
       "temurin"
       "visual-studio-code"
+      "visual-studio-code@insiders"
       "vlc"
       "wireshark"
       "zoom"
