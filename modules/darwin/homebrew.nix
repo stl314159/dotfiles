@@ -21,6 +21,7 @@
     # `brew install`
     brews = [
       "age"
+      "atuin"
       "awscli"
       "azure-cli"
       "bat"
@@ -44,6 +45,7 @@
       "neovim"
       "nmap"
       "omnictl"
+      "repomix"
       "sops"
       "sshs"
       "starship"
