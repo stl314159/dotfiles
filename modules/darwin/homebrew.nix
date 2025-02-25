@@ -20,6 +20,7 @@
 
     # `brew install`
     brews = [
+      "act"
       "age"
       "atuin"
       "awscli"
@@ -106,6 +107,7 @@
       "raycast"
       "temurin"
       "visual-studio-code"
+      "visual-studio-code@insiders"
       "vlc"
       "wireshark"
       "zoom"
