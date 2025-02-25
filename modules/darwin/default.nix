@@ -31,4 +31,19 @@
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
   system.stateVersion = 4;
+
+  environment.systemPackages = with pkgs; [
+    devenv
+    # ... any other packages you want installed
+  ];
+
+  nix = {
+    # Append extra options that will be written to /etc/nix/nix.conf.
+    extraOptions = ''
+      extra-substituters = https://devenv.cachix.org
+      extra-trusted-public-keys = devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw=
+      trusted-users = root scott
+    '';
+  };
+  
 }
