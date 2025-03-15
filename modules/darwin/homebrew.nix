@@ -103,6 +103,7 @@
       "signal"
       "slack"
       "steam"
+      "superwhisper"
       "raspberry-pi-imager"
       "raycast"
       "temurin"
@@ -113,15 +114,15 @@
       "zoom"
     ];
 
-    masApps = {
-      "Jump Desktop" = 524141863;
-      "Microsoft Word" = 462054704;
-      "Microsoft Excel" = 462058435;
-      "Microsoft PowerPoint" = 462062816;
-      "Obsidian Web Clipper" = 6720708363;
-      "Tailscale" = 1475387142;
-      "WireGuard" = 1451685025;
-      "Xcode" = 497799835;
-    };
+    #masApps = {
+    #  "Jump Desktop" = 524141863;
+    #  "Microsoft Word" = 462054704;
+    #  "Microsoft Excel" = 462058435;
+    #  "Microsoft PowerPoint" = 462062816;
+    #  "Obsidian Web Clipper" = 6720708363;
+    #  "Tailscale" = 1475387142;
+    #  "WireGuard" = 1451685025;
+    #  "Xcode" = 497799835;
+    #};
   };
 }

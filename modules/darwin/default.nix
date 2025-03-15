@@ -10,7 +10,9 @@
   # --- Nix config --- #
 
   # Auto upgrade nix package and the daemon service.
-  services.nix-daemon.enable = true;
+  #services.nix-daemon.enable = true;
+  # Disable nix-darwin’s Nix management to allow Determinate to manage it.
+  nix.enable = false;
 
   nix.package = pkgs.nix;
   nixpkgs.config.allowUnfree = true;
